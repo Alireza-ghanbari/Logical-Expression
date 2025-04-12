@@ -51,10 +51,8 @@ def extract_variables(expression):
 
     free_vars -= bound_vars
 
-    print('متغیرهای آزاد:', ''.join(sorted(free_vars)) if free_vars else 0)
-    print('متغیرهای بسته:', ''.join(sorted(bound_vars)) if bound_vars else 0)
+    print(' '.join(sorted(free_vars)) if free_vars else 0)
+    print(' '.join(sorted(bound_vars)) if bound_vars else 0)
 
-
-# فقط یکبار گرفتن ورودی
-expression = input("لطفاً یک عبارت منطقی وارد کنید: ")
+expression = input()
 extract_variables(expression)
